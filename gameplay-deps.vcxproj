@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C627F6A-054F-32BD-AA9F-A03819BDE3DE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gameplay-deps</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\work\GamePlay-deps\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/work/GamePlay-deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\cmake\bin\cmake.exe" -HC:/work/GamePlay-deps -BC:/work/GamePlay-deps --check-stamp-file C:/work/GamePlay-deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/work/GamePlay-deps/CMakeLists.txt;C:\work\GamePlay-deps\CMakeLists.txt;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\work\GamePlay-deps\cmake\TargetArch.cmake;C:\work\GamePlay-deps\arch.c;C:\work\GamePlay-deps\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\work\GamePlay-deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/work/GamePlay-deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\cmake\bin\cmake.exe" -HC:/work/GamePlay-deps -BC:/work/GamePlay-deps --check-stamp-file C:/work/GamePlay-deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/work/GamePlay-deps/CMakeLists.txt;C:\work\GamePlay-deps\CMakeLists.txt;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\work\GamePlay-deps\cmake\TargetArch.cmake;C:\work\GamePlay-deps\arch.c;C:\work\GamePlay-deps\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\work\GamePlay-deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/work/GamePlay-deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\cmake\bin\cmake.exe" -HC:/work/GamePlay-deps -BC:/work/GamePlay-deps --check-stamp-file C:/work/GamePlay-deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/work/GamePlay-deps/CMakeLists.txt;C:\work\GamePlay-deps\CMakeLists.txt;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\work\GamePlay-deps\cmake\TargetArch.cmake;C:\work\GamePlay-deps\arch.c;C:\work\GamePlay-deps\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\work\GamePlay-deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/work/GamePlay-deps/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\cmake\bin\cmake.exe" -HC:/work/GamePlay-deps -BC:/work/GamePlay-deps --check-stamp-file C:/work/GamePlay-deps/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/work/GamePlay-deps/CMakeLists.txt;C:\work\GamePlay-deps\CMakeLists.txt;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCCompiler.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\work\GamePlay-deps\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;C:\work\GamePlay-deps\cmake\TargetArch.cmake;C:\work\GamePlay-deps\arch.c;C:\work\GamePlay-deps\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\work\GamePlay-deps\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\work\GamePlay-deps\CMakeFiles\8a01ceadfe6ed9b68a302f6412a1d411\gameplay-deps.lib.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating gameplay-deps.lib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+call cmake\msvc-amalgamate.bat C:/work/GamePlay-deps/out/external-deps/lib/windows/x86_64/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/work/GamePlay-deps/CMakeFiles/8a01ceadfe6ed9b68a302f6412a1d411/gameplay-deps.lib.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\work\GamePlay-deps\gameplay-deps.lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating gameplay-deps.lib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+call cmake\msvc-amalgamate.bat C:/work/GamePlay-deps/out/external-deps/lib/windows/x86_64/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/work/GamePlay-deps/CMakeFiles/8a01ceadfe6ed9b68a302f6412a1d411/gameplay-deps.lib.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\work\GamePlay-deps\gameplay-deps.lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating gameplay-deps.lib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+call cmake\msvc-amalgamate.bat C:/work/GamePlay-deps/out/external-deps/lib/windows/x86_64/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/work/GamePlay-deps/CMakeFiles/8a01ceadfe6ed9b68a302f6412a1d411/gameplay-deps.lib.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\work\GamePlay-deps\gameplay-deps.lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating gameplay-deps.lib</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+call cmake\msvc-amalgamate.bat C:/work/GamePlay-deps/out/external-deps/lib/windows/x86_64/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/work/GamePlay-deps/CMakeFiles/8a01ceadfe6ed9b68a302f6412a1d411/gameplay-deps.lib.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\work\GamePlay-deps\gameplay-deps.lib</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\work\GamePlay-deps\CMakeFiles\fa486b0ca1ed66fd34fd70ce8efeb5db\gameplay-deps.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/work/GamePlay-deps/CMakeFiles/fa486b0ca1ed66fd34fd70ce8efeb5db/gameplay-deps.rule;C:\work\GamePlay-deps\gameplay-deps.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\work\GamePlay-deps\CMakeFiles\gameplay-deps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/work/GamePlay-deps/CMakeFiles/fa486b0ca1ed66fd34fd70ce8efeb5db/gameplay-deps.rule;C:\work\GamePlay-deps\gameplay-deps.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\work\GamePlay-deps\CMakeFiles\gameplay-deps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/work/GamePlay-deps/CMakeFiles/fa486b0ca1ed66fd34fd70ce8efeb5db/gameplay-deps.rule;C:\work\GamePlay-deps\gameplay-deps.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\work\GamePlay-deps\CMakeFiles\gameplay-deps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/work/GamePlay-deps/CMakeFiles/fa486b0ca1ed66fd34fd70ce8efeb5db/gameplay-deps.rule;C:\work\GamePlay-deps\gameplay-deps.lib;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\work\GamePlay-deps\CMakeFiles\gameplay-deps</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\work\GamePlay-deps\CMakeFiles\gameplay-deps" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\work\GamePlay-deps\ZERO_CHECK.vcxproj">
+      <Project>{F0C9C212-2470-32C5-A7E8-4B1CDD6B6DFB}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\bullet-2.82-r2704\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{8EFD2CFC-83A0-3534-8C11-BB4DC69245B6}</Project>
+      <Name>BulletCollision</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\bullet-2.82-r2704\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{AA27942A-30CD-38FA-B880-85D6C96C3797}</Project>
+      <Name>BulletDynamics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\glew-1.10.0\GLEW.vcxproj">
+      <Project>{BE61CA56-076A-34BD-8E24-057A83DDD817}</Project>
+      <Name>GLEW</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\bullet-2.82-r2704\src\LinearMath\LinearMath.vcxproj">
+      <Project>{576F1F4F-D992-3C77-ADE3-B8FF3C94C8DC}</Project>
+      <Name>LinearMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\openal-1.16.0\OpenAL32.vcxproj">
+      <Project>{160D33A2-1C65-32F4-84BD-5C7F324DEE4B}</Project>
+      <Name>OpenAL32</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\base64-1.0.0\base64.vcxproj">
+      <Project>{173C53ED-CB0C-3380-B807-910D1C4D92FE}</Project>
+      <Name>base64</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\libjson-7.6.1\_internal\Source\json.vcxproj">
+      <Project>{2E74DC7D-7E46-3AE2-8F8B-70E3EC3DDB12}</Project>
+      <Name>json</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\lua-5.2.3\src\lua.vcxproj">
+      <Project>{3B823C92-A9B5-3548-97EE-2BB247527C5C}</Project>
+      <Name>lua</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\ogg-1.3.2\ogg.vcxproj">
+      <Project>{E8B12C4C-B384-3229-AF98-AC6CE27F075A}</Project>
+      <Name>ogg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\png-1.6.15\png_static.vcxproj">
+      <Project>{9A8E4B09-CA4D-3AC3-B15A-2CC532BB8D8A}</Project>
+      <Name>png_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\tinyxml2-2.1.0\tinyxml2static.vcxproj">
+      <Project>{7D079E42-142A-3BDC-9A64-A835DD80790E}</Project>
+      <Name>tinyxml2static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\vorbis-1.3.4\vorbis.vcxproj">
+      <Project>{AE83F68F-B39D-3C96-A006-D97C26FDC61C}</Project>
+      <Name>vorbis</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\vorbis-1.3.4\vorbisenc.vcxproj">
+      <Project>{B76A25DB-EC70-32E0-B7F7-68963E51C737}</Project>
+      <Name>vorbisenc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\vorbis-1.3.4\vorbisfile.vcxproj">
+      <Project>{919365FF-07A9-32B2-B072-1AEF1928D617}</Project>
+      <Name>vorbisfile</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\GamePlay-deps\zlib-1.2.8\zlibstatic.vcxproj">
+      <Project>{8103C66E-312F-3228-BB8F-C13261C5FFD3}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

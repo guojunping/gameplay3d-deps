@@ -1,0 +1,2 @@
+C:/Users/gjp/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ar.exe qc ../build/libvorbisfile.a  CMakeFiles/vorbisfile.dir/lib/vorbisfile.c.o
+C:/Users/gjp/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ranlib.exe ../build/libvorbisfile.a

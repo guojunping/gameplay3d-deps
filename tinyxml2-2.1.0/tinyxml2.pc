@@ -1,0 +1,10 @@
+prefix=C:/StudioProjects/GamePlay-deps/out/external-deps
+exec_prefix=${prefix}
+libdir=C:/StudioProjects/GamePlay-deps/out/external-deps/lib
+includedir=C:/StudioProjects/GamePlay-deps/out/external-deps/include
+
+Name: TinyXML2
+Description: simple, small, C++ XML parser
+Version: 2.1.0
+Libs: -L${libdir} -ltinyxml2
+Cflags: -I${includedir}

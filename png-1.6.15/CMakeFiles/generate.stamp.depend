@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/work/GamePlay-deps/png-1.6.15/CMakeLists.txt
+C:/work/GamePlay-deps/CMakeFiles/3.10.2/CMakeASMCompiler.cmake
+C:/Program Files (x86)/cmake/share/cmake-3.10/Modules/CMakeASMInformation.cmake
+C:/work/GamePlay-deps/png-1.6.15/scripts/pnglibconf.h.prebuilt

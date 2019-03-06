@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\work\GamePlay-deps\tinyxml2-2.1.0\CMakeLists.txt" />
+    <CustomBuild Include="C:\work\GamePlay-deps\CMakeFiles\99dd504f7153f6760692e75795a361a0\DATA_COPY.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\work\GamePlay-deps\tinyxml2-2.1.0\CMakeFiles\DATA_COPY" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{96E5F139-6746-372B-BF38-B42104B9B11F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

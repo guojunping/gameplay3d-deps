@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\work\GamePlay-deps\vorbis-1.3.4\lib\vorbisenc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\work\GamePlay-deps\vorbis-1.3.4\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0E6849E1-3437-388E-8499-A8AF12F7E4FA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

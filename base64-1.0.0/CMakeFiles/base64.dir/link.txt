@@ -1,0 +1,2 @@
+C:/Users/gjp/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ar.exe qc ../build/libbase64.a  CMakeFiles/base64.dir/base64.cpp.o
+C:/Users/gjp/AppData/Local/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ranlib.exe ../build/libbase64.a

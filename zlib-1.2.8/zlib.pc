@@ -1,0 +1,13 @@
+prefix=C:/StudioProjects/GamePlay-deps/out/external-deps
+exec_prefix=C:/StudioProjects/GamePlay-deps/out/external-deps
+libdir=C:/StudioProjects/GamePlay-deps/out/external-deps/lib
+sharedlibdir=C:/StudioProjects/GamePlay-deps/out/external-deps/lib
+includedir=C:/StudioProjects/GamePlay-deps/out/external-deps/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.8
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

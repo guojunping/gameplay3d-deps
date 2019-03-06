@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/work/GamePlay-deps/zlib-1.2.8/CMakeLists.txt
+C:/Program Files (x86)/cmake/share/cmake-3.10/Modules/CheckTypeSize.cmake
+C:/Program Files (x86)/cmake/share/cmake-3.10/Modules/CheckIncludeFile.cmake
+C:/Program Files (x86)/cmake/share/cmake-3.10/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files (x86)/cmake/share/cmake-3.10/Modules/CheckFunctionExists.cmake
+C:/Program Files (x86)/cmake/share/cmake-3.10/Modules/CheckIncludeFile.cmake
+C:/Program Files (x86)/cmake/share/cmake-3.10/Modules/CheckCSourceCompiles.cmake
+C:/work/GamePlay-deps/zlib-1.2.8/zlib.pc.cmakein
+C:/work/GamePlay-deps/zlib-1.2.8/zconf.h.cmakein

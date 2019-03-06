@@ -1,0 +1,3 @@
+C:/StudioProjects/GamePlay-deps/freetype-2.4.5/CMakeFiles/freetype.dir
+C:/StudioProjects/GamePlay-deps/freetype-2.4.5/CMakeFiles/edit_cache.dir
+C:/StudioProjects/GamePlay-deps/freetype-2.4.5/CMakeFiles/rebuild_cache.dir

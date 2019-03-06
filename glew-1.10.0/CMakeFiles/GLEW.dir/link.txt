@@ -1,0 +1,2 @@
+C:/msys64/usr/bin/ar.exe qc ../out/external-deps/lib/windows/x86_64/libGLEW.a  CMakeFiles/GLEW.dir/src/glew.c.obj
+C:/msys64/usr/bin/ranlib.exe ../out/external-deps/lib/windows/x86_64/libGLEW.a
